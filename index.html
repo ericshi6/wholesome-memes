@@ -13,8 +13,8 @@
     <body>
         <div class="container wholesomememe" id="wholesomememe">
             <div class="two-buttons">
-                <h1 class="text-center" style ="margin-top: 2em;" >Random r/Wholesome Memes Generator</h1>
-                <h3 class="text-info text-center">Choose how many random memes you would like to generate.</h3>
+                <h1>Wholesome Memes </h1>
+                <h3 class="text-info">Choose how many random memes you would like to generate.</h3>
                 <img src="Two-Buttons.jpg" />
                 <div id="example">
                   </div>
@@ -44,7 +44,9 @@
                     <img v-bind:src="meme.url" style="width: 100%;"/><hr>
 
                 </div>
-                <img v-bind:src="wholesomememes.url" style="width: 100%;">
+                <div v-if="wholesomememes.author">
+                    <img v-bind:src="wholesomememes.url" style="width: 100%;">
+                </div>
 
             </div>
             
